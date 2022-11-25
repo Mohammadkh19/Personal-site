@@ -5,7 +5,7 @@ var started = false;
 var level = 0;
 
 
-$(document).on("click", function(){
+$(document).keypress(function(){
     if(!started){
         nextSequence();
         started = true;
