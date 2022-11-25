@@ -5,7 +5,7 @@ var started = false;
 var level = 0;
 
 
-$(document).keyup(function(){
+$(document).keydown(function(){
     if(!started){
         nextSequence();
         started = true;
