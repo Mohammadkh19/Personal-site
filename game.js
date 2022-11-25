@@ -5,7 +5,7 @@ var started = false;
 var level = 0;
 
 
-$(document).click(function(){
+$(document).on("click", function(){
     if(!started){
         nextSequence();
         started = true;
