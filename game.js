@@ -5,11 +5,11 @@ var started = false;
 var level = 0;
 
 
-$(document).keypress(function(){
-    if(!started){
+$(document).on('keyup', function () {
+    if (!started) {
         nextSequence();
         started = true;
-        $("h1").text("level " +level);
+        $("h1").text("level " + level);
     }
 });
 
